@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/02/22/Hexo+Github/index.html">
 <meta property="og:site_name" content="不摸鱼的猫">
 <meta property="og:description" content="具体步骤参考： http://www.ciaoshen.com/2016/02/28/githubHexo-1/             http://baixin.io/2015/08/HEXO搭建个人博客/官方网站： https://hexo.io/zh-cn/docs/commands.html">
-<meta property="og:updated_time" content="2017-02-23T03:17:14.000Z">
+<meta property="og:updated_time" content="2017-02-23T03:19:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github">
 <meta name="twitter:description" content="具体步骤参考： http://www.ciaoshen.com/2016/02/28/githubHexo-1/             http://baixin.io/2015/08/HEXO搭建个人博客/官方网站： https://hexo.io/zh-cn/docs/commands.html">
@@ -357,11 +357,12 @@ hexo d #github同步
 <h2 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h2><p>1.hexo d -g 之后页面没有变化  –&gt;  先 hexo clean 然后再执行 hexo d -g<br>2.categories 和 tags 页面404  –&gt;  </p>
 <pre><code>$ hexo new page tags
 $ hexo new page categories
-$ vim source/tags/index.md 
-</code></pre><p>修改为<br>    title: tags<br>    date: 2017-02-23 11:00:31<br>    type: “tags”</p>
-<pre><code>$ vim source/categories/index.md
-</code></pre><p>修改为<br>    title: categories<br>    date: 2017-02-23 11:00:31<br>    type: “categories”</p>
+$ vim source/tags/index.md
+ADD LINE $ type: &quot;tags&quot;
 
+$ vim source/categories/index.md
+ADD LINE $ type: &quot;categories&quot;
+</code></pre>
       
     </div>
 
