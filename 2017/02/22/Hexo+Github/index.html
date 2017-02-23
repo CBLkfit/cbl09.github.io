@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/02/22/Hexo+Github/index.html">
 <meta property="og:site_name" content="不摸鱼的猫">
 <meta property="og:description" content="具体步骤参考： http://www.ciaoshen.com/2016/02/28/githubHexo-1/             http://baixin.io/2015/08/HEXO搭建个人博客/官方网站： https://hexo.io/zh-cn/docs/commands.html">
-<meta property="og:updated_time" content="2017-02-23T03:10:41.000Z">
+<meta property="og:updated_time" content="2017-02-23T03:14:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github">
 <meta name="twitter:description" content="具体步骤参考： http://www.ciaoshen.com/2016/02/28/githubHexo-1/             http://baixin.io/2015/08/HEXO搭建个人博客/官方网站： https://hexo.io/zh-cn/docs/commands.html">
@@ -354,10 +354,9 @@ hexo d #github同步
 <h2 id="6-页面主题"><a href="#6-页面主题" class="headerlink" title="6. 页面主题"></a>6. 页面主题</h2><p>#主题选择</p>
 <p>#主题设置<br>我选择的是Next主题，设置参考 <a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/" target="_blank" rel="external">http://www.arao.me/2015/hexo-next-theme-optimize-base/</a></p>
 <p>刚搭了个很粗糙的版本，接下来看看域名，Markdown语法，主题等，再进行完善。</p>
-<h2 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h2><ol>
-<li>hexo d -g 之后页面没有变化  –&gt;  先 hexo c 然后再执行 hexo d -g</li>
-<li>categories 和 tags 页面404  –&gt;<br> $ hexo new page tags<br> $ hexo new page categories<h2 id="vim-source-tags-index-md"><a href="#vim-source-tags-index-md" class="headerlink" title=" $ vim source/tags/index.md "></a> $ vim source/tags/index.md </h2>   title: tags<br>   date: 2017-02-23 11:00:31<h2 id="type-“tags”"><a href="#type-“tags”" class="headerlink" title="   type: “tags”"></a>   type: “tags”</h2><h2 id="vim-source-categories-index-md"><a href="#vim-source-categories-index-md" class="headerlink" title=" $ vim source/categories/index.md"></a> $ vim source/categories/index.md</h2>  title: categories<br>   date: 2017-02-23 11:00:31<h2 id="type-“categories”"><a href="#type-“categories”" class="headerlink" title="   type: “categories”"></a>   type: “categories”</h2></li>
-</ol>
+<h2 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h2><p>1.hexo d -g 之后页面没有变化  –&gt;  先 hexo clean 然后再执行 hexo d -g<br>2.categories 和 tags 页面404  –&gt;<br>    $ hexo new page tags<br>    $ hexo new page categories<br>    $ vim source/tags/index.md<br>修改为<br>      title: tags<br>      date: 2017-02-23 11:00:31<br>      type: “tags”</p>
+<pre><code>$ vim source/categories/index.md
+</code></pre><p>修改为<br>     title: categories<br>      date: 2017-02-23 11:00:31<br>      type: “categories”</p>
 
       
     </div>
@@ -520,7 +519,7 @@ hexo d #github同步
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Node-js-git"><span class="nav-number">1.</span> <span class="nav-text">1. 安装Node.js, git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">2. 安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设置github"><span class="nav-number">3.</span> <span class="nav-text">3. 设置github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-修改-config-yml"><span class="nav-number">4.</span> <span class="nav-text">4. 修改_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-生成与同步"><span class="nav-number">5.</span> <span class="nav-text">5.生成与同步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-页面主题"><span class="nav-number">6.</span> <span class="nav-text">6. 页面主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题解决"><span class="nav-number">7.</span> <span class="nav-text">常见问题解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim-source-tags-index-md"><span class="nav-number">8.</span> <span class="nav-text"> $ vim source/tags/index.md </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#type-“tags”"><span class="nav-number">9.</span> <span class="nav-text">   type: “tags”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim-source-categories-index-md"><span class="nav-number">10.</span> <span class="nav-text"> $ vim source/categories/index.md</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#type-“categories”"><span class="nav-number">11.</span> <span class="nav-text">   type: “categories”</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Node-js-git"><span class="nav-number">1.</span> <span class="nav-text">1. 安装Node.js, git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">2. 安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设置github"><span class="nav-number">3.</span> <span class="nav-text">3. 设置github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-修改-config-yml"><span class="nav-number">4.</span> <span class="nav-text">4. 修改_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-生成与同步"><span class="nav-number">5.</span> <span class="nav-text">5.生成与同步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-页面主题"><span class="nav-number">6.</span> <span class="nav-text">6. 页面主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题解决"><span class="nav-number">7.</span> <span class="nav-text">常见问题解决</span></a></li></ol></div>
             
 
           </div>
